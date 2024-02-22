@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Prediction</title>
+    <style>
+        body {
+            background-color: black; /* Black background color */
+            color: pink; /* Pink font color */
+            font-family: Arial, sans-serif; /* Font family */
+        }  
+    
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .title {
+            font-size: 100px;
+            margin-bottom: 20px;
+        }
+        .submit {
+            background-color: pink; /* Pink background color */
+            width:200px;
+            height:50px;
+            border: none; /* Remove border */
+            color: black; /* Black text color */
+            padding: 10px 20px; /* Add padding */
+            text-align: center; /* Center text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Display as inline block */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Add cursor style */
+        }
+        #email {
+                padding: 10px;
+                font-size:50px;
+                width: 1000px;
+                height:100px;
+                margin-bottom: 10px;
+            }
+      </style>
+</head>
+<body>
+    <div class="container">
+     <h1 class="title">Email Spam Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="email"></label>
+        <input type="text" id="email"  placeholder="Enter email" name="email"><br>
+        <input type="submit" class="submit" value="Predict">
+    </form>
+</div>
+</body>
+</html>
